@@ -53,13 +53,13 @@ position: fixed; width: 100vw; height: 100vh;
 }
 
 .parent-element-to-video {
-    overflow: hidden;
+    position: relative; /* or absolute or fixed */
 }
 video {
-    height: 100%;
-    width: 177.77777778vh; /* 100 * 16 / 9 */
-    min-width: 100%;
-    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 #splash{
 position:fixed; top:0; left:0; z-index:999;
