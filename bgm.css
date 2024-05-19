@@ -49,11 +49,10 @@ transition:all 1s;
     body{
 margin:0;
 padding:0;
-position: fixed; width: 100vw; height: 100vh;
 }
 
 .parent-element-to-video {
-    position: relative; /* or absolute or fixed */
+    position: fixed; width: 100vw; height: 100vh; /* or absolute or fixed */
 }
 video {
     position: absolute;
