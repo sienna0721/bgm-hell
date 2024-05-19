@@ -11,8 +11,16 @@
   &#127929; Click to start!
 </div>
 
-<video autoplay loop muted src="idol.mov">
-</video>
+<video loop muted id = "autoplay">
+  <source src="idol.mov" type="video/mov">
+  Your browser does not support the video tag.
+</video>   
+<script>
+    window.onload = function(){
+      document.getElementById("autoplay").play()
+    }
+</script>   
+
 <audio id="bgm" src="花之塔.mp3"  ></audio>
 
 
