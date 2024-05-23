@@ -8,7 +8,7 @@ splash.remove();
 splash.classList.add('hide');
   var video = document.getElementById('vidId');
 
-video.pause();
+
 video.currentTime = 0;
 video.load();
 }
